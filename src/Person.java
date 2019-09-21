@@ -78,6 +78,6 @@ public class Person {
     }
 
     public String toCSVDataRecord(){
-        return this.lastName + ", " + this.firstName + ", " + this.title + ", " + this.YOB;
+        return this.ID + ", " + this.lastName + ", " + this.firstName + ", " + this.title + ", " + this.YOB;
     }
 }
