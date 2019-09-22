@@ -3,27 +3,27 @@
 
 ## Assignment Self Assessment:
 #### Reflection
-[//]: <> (share your thoughts on the assignment, things you learnt and would like to remember when you look back at this assignment)
+Having done file io with c++ before, this project was mostly just learning how file io with text files works in java as opposed to c++. I also was able to do the formatting properly this time using printf statements. I didn't think this assignment was too chellenging, but neither did I think that it was too easy. Overall I feel like my understanding of text file io and java in general is improving. 
 
 
 #### Self Assessment
 ##### Part 1:
-- [ ] The program runs with no errors.
-- [ ] The Person class includes all the fields and methods specified above.
-- [ ] Usage of the `Calendar` object to calculate age in the `getAge` method.
-- [ ] The program properly instantiates objects using the class constructor.
-- [ ] The program properly stores the Objects in an `ArrayList`.
-- [ ] Proper usage of Git and GitHub (frequent commits, explanatory commit messages)
+- [x] The program runs with no errors.
+- [x] The Person class includes all the fields and methods specified above.
+- [x] Usage of the `Calendar` object to calculate age in the `getAge` method.
+- [x] The program properly instantiates objects using the class constructor.
+- [x] The program properly stores the Objects in an `ArrayList`.
+- [x] Proper usage of Git and GitHub (frequent commits, explanatory commit messages)
 
 ##### Part 2:
-- [ ] The program runs with no errors.
-- [ ] The program properly uses the `JFileChooser`.
-- [ ] The program properly instantiates objects using the class constructor.
-- [ ] The program properly stores the Objects in an `ArrayList`.
-- [ ] The program output is formatted properly.
-- [ ] Proper usage of Git and GitHub (frequent commits, explanatory commit messages)
+- [x] The program runs with no errors.
+- [x] The program properly uses the `JFileChooser`.
+- [x] The program properly instantiates objects using the class constructor.
+- [x] The program properly stores the Objects in an `ArrayList`.
+- [x] The program output is formatted properly.
+- [x] Proper usage of Git and GitHub (frequent commits, explanatory commit messages)
 
-**Your Grade:**  /20
+**Your Grade:**  20/20
 
 **Notes:**
 
