@@ -8,9 +8,9 @@ public class PersonGenerator {
     public static void main(String[] args) throws FileNotFoundException {
         Scanner in = new Scanner(System.in);
         ArrayList<Person> people = new ArrayList<>();
-        int index = 0;
+        int index = 1;
 
-        while (SafeInput.getYNConfirm(in, "Create new Person object?")){
+        while (SafeInput.getYNConfirm(in, "Create new Person object?")) {
             System.out.println("First name: ");
             String firstName = in.nextLine();
             System.out.println("\nLast name: ");
@@ -29,7 +29,7 @@ public class PersonGenerator {
         String outputFileName = in.nextLine();
         PrintWriter out = new PrintWriter(outputFileName);
 
-        for (Person person: people){
+        for (Person person : people) {
             out.println(person.toCSVDataRecord());
         }
 

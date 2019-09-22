@@ -5,32 +5,33 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 
 public class PersonReader {
-    public static void main(String[] args) throws FileNotFoundException{
-        /*
-
-    Use the JFileChooser to prompt the user to select the file you export in Part 1.
-    Instantiate a Person Object for each record you read from the file.
-    Store all the Person Objects in an ArrayList<Person>.
-    Use the String.format or System.out.printf method to create a neatly formatted columnar display of the data.
-
-         */
+    public static void main(String[] args) throws FileNotFoundException {
         ArrayList<Person> people = new ArrayList<>();
 
         JFileChooser chooser = new JFileChooser();
         Scanner in = null;
-        if (chooser.showOpenDialog(null) == JFileChooser.APPROVE_OPTION){
+        if (chooser.showOpenDialog(null) == JFileChooser.APPROVE_OPTION) {
             File selectedFile = chooser.getSelectedFile();
             in = new Scanner(selectedFile);
         }
 
-        while (in.hasNextLine()) {
-            people.add(new Person(in.next().substring(0, in.next().length() - 1),
-                                  in.next().substring(0, in.next().length() - 1),
-                                  in.next().substring(0, in.next().length() - 1),
-                                  in.next().substring(0, in.next().length() - 1),
-                                  in.nextInt()));
+        while (in.hasNext()) {
+            people.add(new Person(removeComma(in.next()), removeComma(in.next()), removeComma(in.next()), removeComma(in.next()), in.nextInt()));
         }
 
-        
+        System.out.printf("%-15s%-15s%-15s%-15s%-15s\n", "ID", "First Name", "Last Name", "Title", "YOB");
+        System.out.println("======================================================================");
+
+        for (Person person : people) {
+            System.out.printf("%-15s", person.getID());
+            System.out.printf("%-15s", person.getFirstName());
+            System.out.printf("%-15s", person.getLastName());
+            System.out.printf("%-15s", person.getTitle());
+            System.out.printf("%-15d\n", person.getYOB());
+        }
+    }
+
+    private static String removeComma(String inString) {
+        return inString.substring(0, inString.length() - 1);
     }
 }

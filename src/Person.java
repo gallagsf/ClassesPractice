@@ -7,7 +7,7 @@ public class Person {
     private String title;
     private int YOB;
 
-    public Person(String ID, String firstName, String lastName, String title, int YOB){
+    public Person(String ID, String firstName, String lastName, String title, int YOB) {
         validateAge(YOB);
         this.ID = ID;
         this.firstName = firstName;
@@ -19,7 +19,6 @@ public class Person {
     public String getID() {
         return ID;
     }
-
     public void setID(String ID) {
         this.ID = ID;
     }
@@ -27,7 +26,6 @@ public class Person {
     public String getFirstName() {
         return firstName;
     }
-
     public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
@@ -35,7 +33,6 @@ public class Person {
     public String getLastName() {
         return lastName;
     }
-
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
@@ -43,10 +40,7 @@ public class Person {
     public String getTitle() {
         return title;
     }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
+    public void setTitle(String title) { this.title = title; }
 
     public int getYOB() {
         return YOB;
@@ -63,21 +57,15 @@ public class Person {
         }
     }
 
-    public String fullName(){
-        return this.firstName + " " + this.lastName;
-    }
+    public String fullName() { return this.firstName + " " + this.lastName; }
 
-    public String formalName(){
-        return this.title + " " + fullName();
-    }
+    public String formalName() { return this.title + " " + fullName(); }
 
-    public static int getAge(int year){
+    public static int getAge(int year) {
         int date = Calendar.getInstance().get(Calendar.YEAR);
         int age = date - year;
         return age;
     }
 
-    public String toCSVDataRecord(){
-        return this.ID + ", " + this.lastName + ", " + this.firstName + ", " + this.title + ", " + this.YOB;
-    }
+    public String toCSVDataRecord() { return this.ID + ", " + this.lastName + ", " + this.firstName + ", " + this.title + ", " + this.YOB; }
 }

@@ -1,0 +1,4 @@
+1, Dondarrion, Beric, Mr., 1985
+2, Tyrell, Loras, Ser, 1945
+3, Targaryen, Visenya, Ms., 1996
+4, Daxos, Xaro-Xhoan, Mr., 1957
